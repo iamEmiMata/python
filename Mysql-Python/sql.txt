@@ -1,0 +1,71 @@
+
+DDL : Data Definition Language 
+
+	> create
+	> alter
+	> drop
+	> truncate
+	> rename
+
+DML : Data Manipulating Language
+	
+	> insert 
+	> update
+	> delete
+	> merge
+
+DCL : Data Control Language
+
+	> grant
+	> revoke
+
+TCL : Transaction Control Language
+	
+	> Commit
+	> Rollback
+	> Save point
+
+DQL : Data Query Language 
+	
+	> select
+	> show
+	> describe
+
+
+Algunos comandos : Ejemplos...
+
+Modificaciones :
+create database
+create table (values)
+
+insert into table (columns) values ('valores')
+update	table set column = 'nuevoValor' where id = idRow
+delete from column where id = idRow (elimina una fila)
+
+drop database 
+drop table
+
+alter >
+	alter table Tabla ADD NombreColumna Tipo de dato
+	alter table Tabla MODIFY COLUMN NombreColumna tipo de dato
+	alter table Tabla DROP COLUMN NombreColumna
+
+Consultas : 
+show databases
+show tables
+
+describe database
+describe table
+
+select * from
+select id, name from table
+select id, name from table where condition 
+select id, name from table where condition order by asc or desc
+select id, name, author from table order by name 
+select * from table where condition between value1 and value2
+select * from table where condition Like  '%e' or 'e%' or '%jane%'
+
+select tabla1.ID, tabla2.Campo, tabla1.Campo
+from tabla1
+inner join tabla2 on tabla1.ID = tabla2.ID
+
