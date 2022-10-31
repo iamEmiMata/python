@@ -42,7 +42,7 @@ class backup():
 					cursor.execute(sql)
 					self.conexion.commit()
 
-					print(f'Backup > database {file}__backup,  was create ')
+					print(f'Backup > database {file},  was create ')
 
 				except Exception as e:
 					print(e)
