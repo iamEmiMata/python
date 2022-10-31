@@ -69,7 +69,7 @@ class backup():
 		if self.conexion.is_connected():
 			try:
 				# Direccion de la carpeta en donde guardaremos el respaldo
-				saveBackup = f'C:\\Users\\marie\\OneDrive\\Escritorio\\backup\\{self.dbName}__backup.sql'
+				saveBackup = f'C:\\Users\\Escritorio\\backup\\{self.dbName}__backup.sql'
 				# path > direccion en donde esta mysqldump.exe
 				path = 'C:\\xampp\\mysql\\bin\\mysqldump.exe'
 				# popen is a method()
